@@ -3,16 +3,22 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  background-color: rgb(179, 179, 179);
+}
+* {
+  box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .calc-wrapper {
   border: 3px solid #000;
   width: 100%;
-  padding: 10px;
+  padding: 40px 10px 80px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   text-align: center;
+  background-color: rgb(126, 177, 235);
 }
 
 .display input {
@@ -20,19 +26,23 @@ body {
   height: 2rem;
   font-size: 1.5rem;
   text-align: right;
+  outline: none;
+  cursor: initial;
+  padding: 2px 10px;
 }
 
 .button-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 .num-btn {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px #000;
 }
 .num-btn:hover {
   background-color: rgb(107, 107, 107);
@@ -54,6 +64,7 @@ body {
 }
 .clear,
 .equals {
+  background-color: #fff;
   border: 1px solid black;
   flex: 1;
   display: flex;
